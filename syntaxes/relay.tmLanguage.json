@@ -1,0 +1,62 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Relay",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name":"string.quoted",
+					"match": "\\*[a-zA-Z1-9_]+\\b"
+				},
+				{
+					"name":"constant.numeric",
+					"match": "\\d+"
+				},
+				{
+					"name":"variable.language",
+					"match": "\\btrue|false|nada\\b"
+				},
+				{
+					"name":"storage.modifier",
+					"match": "[a-zA-Z1-9_]+(?=:)"
+				},
+				{
+					"name":"entity.name.function",
+					"match": "[a-zA-Z1-9_]+\\b"
+				},
+				{
+					"name":"keyword.operator",
+					"match": "=>|->|="
+				},
+				{
+					"name":"entity.name.type",
+					"match": "@[a-zA-Z1-9_]+"
+				},
+				{
+					"name":"comment",
+					"match": "::.+"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.relay",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.relay",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.relay"
+}

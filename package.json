@@ -1,0 +1,25 @@
+{
+    "name": "relay-syntax",
+    "displayName": "relay-syntax",
+    "description": "syntax for relay",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "relay",
+            "aliases": ["Relay", "relay"],
+            "extensions": [".ry"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "relay",
+            "scopeName": "source.relay",
+            "path": "./syntaxes/relay.tmLanguage.json"
+        }]
+    }
+}
