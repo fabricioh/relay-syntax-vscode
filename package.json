@@ -1,7 +1,10 @@
 {
     "name": "relay-syntax",
-    "displayName": "relay-syntax",
-    "description": "syntax for relay",
+    "displayName": "Relay syntax",
+    "description": "Syntax highlight support for the relay scripting language",
+    "icon": "res/round.png",
+    "repository": {"url": "https://github.com/fabricioh/relay-syntax-vscode"},
+    "publisher": "fabricioh",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.46.0"
