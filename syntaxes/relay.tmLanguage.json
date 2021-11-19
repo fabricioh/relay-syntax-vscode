@@ -25,11 +25,11 @@
 					"match": "\\btrue|false|nada\\b"
 				},
 				{
-					"name":"storage.modifier",
+					"name":"variable.function",
 					"match": "[a-zA-Z1-9_]+(?=:)"
 				},
 				{
-					"name":"entity.name.function",
+					"name":"keyword.control",
 					"match": "[a-zA-Z1-9_]+\\b"
 				},
 				{
@@ -37,7 +37,7 @@
 					"match": "=>|->|="
 				},
 				{
-					"name":"entity.name.type",
+					"name":"storage.type",
 					"match": "@[a-zA-Z1-9_]+"
 				},
 				{
