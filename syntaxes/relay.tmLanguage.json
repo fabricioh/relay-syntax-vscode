@@ -13,7 +13,7 @@
 		"keywords": {
 			"patterns": [
 				{
-					"name":"string.quoted",
+					"name":"entity.name",
 					"match": "\\*[a-zA-Z1-9_]+\\b"
 				},
 				{
@@ -34,7 +34,7 @@
 				},
 				{
 					"name":"keyword.operator",
-					"match": "=>|->|="
+					"match": "=>|->|=|::|@(?=\\()"
 				},
 				{
 					"name":"storage.type",
@@ -42,7 +42,7 @@
 				},
 				{
 					"name":"comment",
-					"match": "::.+"
+					"match": "~~.+"
 				}
 			]
 		},
