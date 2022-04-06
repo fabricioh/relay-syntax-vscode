@@ -5,7 +5,7 @@
     "icon": "res/round.png",
     "repository": {"url": "https://github.com/fabricioh/relay-syntax-vscode"},
     "publisher": "fabricioh",
-    "version": "2.5.0",
+    "version": "3.0.0",
     "engines": {
         "vscode": "^1.46.0"
     },

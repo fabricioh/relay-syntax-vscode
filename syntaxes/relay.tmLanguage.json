@@ -13,10 +13,6 @@
 		"keywords": {
 			"patterns": [
 				{
-					"name":"entity.name",
-					"match": "\\*[a-zA-Z1-9_]+\\b"
-				},
-				{
 					"name":"constant.numeric",
 					"match": "\\d+"
 				},
@@ -26,23 +22,23 @@
 				},
 				{
 					"name":"variable.function",
-					"match": "[a-zA-Z1-9_]+(?=:)"
+					"match": "[a-zA-Z1-9_]+"
 				},
 				{
 					"name":"keyword.control",
-					"match": "[a-zA-Z1-9_]+\\b"
+					"match": "(?<=/)[a-zA-Z1-9_]+(?=/)"
 				},
 				{
 					"name":"keyword.operator",
-					"match": "=>|->|=|::|@(?=\\()"
+					"match": "=>|->|\\."
 				},
 				{
 					"name":"storage.type",
-					"match": "@[a-zA-Z1-9_]+"
+					"match": "[a-zA-Z1-9_]+(?=/)"
 				},
 				{
 					"name":"comment",
-					"match": "~~.+"
+					"match": "~~.*"
 				}
 			]
 		},
